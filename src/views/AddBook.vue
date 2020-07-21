@@ -47,7 +47,7 @@
 <script>
 import {mapActions} from 'vuex'
 export default {
-    name: 'AddBook',
+    name: 'addBook',
     data: () => ({
         title: '',
         author:'',

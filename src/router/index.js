@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-
+import addBook from '../views/AddBook'
+import editBook from '../views/EditBook'
 
 Vue.use(VueRouter)
 
@@ -9,12 +10,12 @@ Vue.use(VueRouter)
   {
     path: '/addBook',
     name: 'AddBook',
-    component: () => import('../views/AddBook.vue')
+    component: addBook
   },
   {
     path: '/editBook/:id',
     name: 'EditBook',
-    component: () => import('../views/EditBook.vue')
+    component: editBook
   }
 ]
 
